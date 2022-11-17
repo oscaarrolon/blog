@@ -3,11 +3,9 @@
     <article *ngFor="let blog of arrPosts">
 
         <h5>{{blog.titulo}}</h5>
-
-        <div> <img [src]="blog.imagen" alt=""></div>
-
-
-
+        <div class="imagen">
+            <img [src]="blog.imagen" alt="">
+        </div>
         <p>{{blog.autor}}</p>
         <p>{{blog.fecha | date: 'dd/MM/yyyy'}}</p>
 
