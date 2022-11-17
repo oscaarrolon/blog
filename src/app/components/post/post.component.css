@@ -1,0 +1,10 @@
+.container {
+    margin: 0 auto;
+    width: 600px;
+}
+
+
+.imagen img {
+    width: 100px;
+    height: 100px;
+}

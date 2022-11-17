@@ -1,0 +1,39 @@
+<div class="container">
+    <form [formGroup]="formulario">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Titulo</label>
+            <input type="text" class="form-control" formControlName="titulo">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Texto</label>
+            <textarea class="form-control" formControlName="texto" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Autor</label>
+            <input type="text" class="form-control" formControlName="autor">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Imagen</label>
+            <input type="text" class="form-control" formControlName="imagen">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Fecha</label>
+            <input type="date" class="form-control" formControlName="fecha">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Categoria</label>
+            <select class="form-select">
+                <option hidden value="">Seleccione Categoría</option>
+                <option value="deportes">Deportes</option>
+                <option value="economia">Economia</option>
+                <option value="salud">Salud</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary" (click)="onEnviar()">Submit</button>
+    </form>
+</div>

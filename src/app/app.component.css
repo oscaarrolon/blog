@@ -1,0 +1,34 @@
+nav ul li {
+    cursor: pointer;
+    list-style: none;
+    margin: 10px;
+    transition: 0.5s;
+
+}
+
+
+nav ul li:hover {
+    margin: 5px;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav {
+    background-color: black;
+    color: white;
+
+}
+
+.nav-bar {
+    width: 600px;
+    margin: 0 auto;
+}
+
+router-outlet {
+    margin: 0 auto;
+    width: 600px;
+}
